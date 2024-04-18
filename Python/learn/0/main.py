@@ -6,7 +6,7 @@
 #
 # Past Modification: Adding COPYRIGHT
 # Last Modification: Adding The «SOFTWARE» Block
-# Modification Date: 2024.04.18, 03:38 PM
+# Modification Date: 2024.04.18, 05:17 PM
 #
 # Create Date: 2024.04.18, 01:03 PM
 
@@ -20,7 +20,6 @@ from settings import (
     HEADER_HEIGHT_DIV,
     FOOTER_HEIGHT_DIV,
     PRIMARY,
-    SECONDARY,
     DARK
 )
 from utils import height_div

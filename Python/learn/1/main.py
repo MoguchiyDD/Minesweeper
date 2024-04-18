@@ -4,11 +4,11 @@
 # Goal: Launch Working SOFTWARE
 # Result: Opens The Finished SOFTWARE in The ACTIVE WINDOW
 #
-# Past Modification: Adding COPYRIGHT
-# Last Modification: Adding The «SOFTWARE» Block
-# Modification Date: 2024.04.18, 05:17 PM
+# Past Modification: Adding The «SOFTWARE» Block
+# Last Modification: Editing The «SOFTWARE» Block (CELLS)
+# Modification Date: 2024.04.18, 07:00 PM
 #
-# Create Date: 2024.04.18, 01:03 PM
+# Create Date: 2024.04.18, 05:16 PM
 
 
 from tkinter import Tk, Frame
@@ -19,10 +19,12 @@ from settings import (
     HEIGHT,
     HEADER_HEIGHT_DIV,
     FOOTER_HEIGHT_DIV,
+    GRID_CELLS,
     PRIMARY,
     DARK
 )
 from utils import height_div
+from cell import Cell
 
 
 # ------------ SOFTWARE ------------
@@ -64,6 +66,13 @@ footer = Frame(
     height=footer_height
 )
 footer.place(x=0, y=(content_height + header_height))
+
+# CONTENT : Cells
+for x in range(GRID_CELLS):
+    for y in range(GRID_CELLS):
+        cell = Cell()
+        cell.create_cell_btn(content)
+        cell.cell_btn.grid(column=x, row=y)
 
 # Run
 root.mainloop()

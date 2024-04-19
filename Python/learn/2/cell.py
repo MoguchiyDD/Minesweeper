@@ -4,9 +4,9 @@
 # Goal: Create BOX with CONTENTS
 # Result: Ready BOX with CONTENTS
 #
-# Past Modification: Adding The «CELL» Block
-# Last Modification: Editing The «CELL» Block (STYLE && BOMBS)
-# Modification Date: 2024.04.19, 12:57 PM
+# Past Modification: Editing The «CELL» Block (STYLE && BOMBS)
+# Last Modification: Editing The «CELL» Block (COMMENTS && SPACES)
+# Modification Date: 2024.04.19, 07:04 PM
 #
 # Create Date: 2024.04.18, 07:06 PM
 
@@ -34,6 +34,8 @@ class Cell:
 
     ---
     PARAMETERS:
+    - x: int -> X Axis of The CURRENT CELL
+    - y: int -> Y Axis of The CURRENT CELL
     - is_bomb: bool = False -> The CELL will be a BOMB
     ---
     FUNCTIONS:
@@ -50,7 +52,7 @@ class Cell:
 
     all = []
 
-    def __init__(self, x, y, is_bomb: bool = False) -> None:
+    def __init__(self, x: int, y: int, is_bomb: bool = False) -> None:
         self.x = x
         self.y = y
         self.is_bomb = is_bomb
@@ -111,12 +113,12 @@ class Cell:
         """
         Installing BOMBS in Different CELLS
         """
-        
+
         bomb_count = randint(MIN_BOMB, MAX_BOMB)
         picked_cells = sample(Cell.all, bomb_count)
         for picked_cell in picked_cells:
             picked_cell.is_bomb = True
-    
+
     def __repr__(self) -> str:
         """
         Replaces The IDs of CLASS «Cell» with a STRING

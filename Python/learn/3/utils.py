@@ -1,12 +1,12 @@
 # Developer && Owner: МогучийДД (MoguchiyDD)
 # LICENSE: MIT License which is located in the text file LICENSE
 #
-# Goal: Keep CONSTANTS for The SOFTWARE
-# Result: Saved CONSTANTS for The SOFTWARE
+# Goal: Create SMALL HELPER FUNCTIONS
+# Result: Ready SMALL HELPER FUNCTIONS
 #
 # Past Modification: Adding COPYRIGHT
 # Last Modification: Adding The «HEIGHT» Block
-# Modification Date: 2024.04.19, 01:05 PM
+# Modification Date: 2024.04.20, 02:40 PM
 #
 # Create Date: 2024.04.19, 01:04 PM
 

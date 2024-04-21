@@ -6,9 +6,9 @@
 #
 # Past Modification: Adding COPYRIGHT
 # Last Modification: Moving The HEADER from «main.py» to «content/header.py»
-# Modification Date: 2024.04.20, 01:34 PM
+# Modification Date: 2024.04.20, 03:16 PM
 #
-# Create Date: 2024.04.20, 12:45 PM
+# Create Date: 2024.04.20, 03:03 PM
 
 
 from tkinter import Tk, Frame

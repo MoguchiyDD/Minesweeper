@@ -4,14 +4,15 @@
 # Goal: SOFTWARE FOOTER
 # Result: Ready SOFTWARE FOOTER
 #
-# Past Modification: Adding COPYRIGHT
-# Last Modification: Moving The FOOTER from «main.py» to «content/footer.py»
-# Modification Date: 2024.04.20, 01:54 PM
+# Past Modification: Moving The FOOTER from «main.py» to «content/footer.py»
+# Last Modification: Adding COPYRIGHT (Official Page)
+# Modification Date: 2024.04.21, 07:27 PM
 #
-# Create Date: 2024.04.20, 12:55 PM
+# Create Date: 2024.04.20, 03:03 PM
 
 
-from tkinter import Tk, Frame, Label, font
+from tkinter import Tk, Frame, Button, font
+from webbrowser import open
 
 from settings import WIDTH, FOOTER_FONT_SIZE, DARK, TEXT
 from utils import frame_header, frame_content, frame_footer
@@ -55,12 +56,25 @@ def footer_copyright(location: Frame, location_height: int) -> None:
     - location_height: int -> FOOTER HEIGHT for The LABEL
     """
 
-    copyright = Label(
+    def open_url() -> None:
+        """
+        Opens a URL with The OFFICIAL GitHub Page of The AUTHOR of
+        The «МогучийДД (MoguchiyDD)» SOFTWARE
+        """
+
+        open("https://github.com/MoguchiyDD")
+
+    copyright = Button(
         location,
         foreground=TEXT,
         background=DARK,
+        activeforeground=TEXT,
+        activebackground=DARK,
+        highlightthickness=0,
+        borderwidth=0,
+        font=font.Font(size=FOOTER_FONT_SIZE),
         text=f"Copyright (c) 2024 MoguchiyDD",
-        font=font.Font(size=FOOTER_FONT_SIZE)
+        command=open_url
     )
 
     x_axis = (WIDTH - copyright.winfo_reqwidth()) // 2

@@ -6,7 +6,7 @@
 #
 # Past Modification: Adding COPYRIGHT
 # Last Modification: Moving The CONTENT from «main.py» to «content/content.py»
-# Modification Date: 2024.04.20, 01:34 PM
+# Modification Date: 2024.04.21, 08:03 AM
 #
 # Create Date: 2024.04.20, 01:12 PM
 
@@ -27,7 +27,7 @@ def content(root: Tk) -> Frame:
     PARAMETERS:
     - root: Tk -> SOFTWARE WINDOW
     ---
-    RESULTS: (CONTENT, CONTENT HEIGHT)
+    RESULTS: CONTENT
     """
 
     header_height = frame_header()

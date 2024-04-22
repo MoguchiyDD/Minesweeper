@@ -6,7 +6,7 @@
 #
 # Past Modification: Editing The «CELL» Block (LABELS)
 # Last Modification: Bug Fixed
-# Modification Date: 2024.04.21, 07:18 PM
+# Modification Date: 2024.04.22, 11:31 AM
 #
 # Create Date: 2024.04.20, 03:03 PM
 
@@ -248,7 +248,8 @@ class Cell:
         - _: Event -> Link with BUTTON
         """
 
-        if (not self.is_bomb_flag) and (Cell.bomb_count >= 1):  # Set Flag
+        if ((not self.is_bomb_flag) and (Cell.bomb_count >= 1)
+                and (not self.is_opened)):  # Set Flag
             self.cell_btn.configure(
                 foreground=TEXT,
                 background=TEXT,
@@ -285,13 +286,14 @@ class Cell:
             self.is_bomb_flag = False
 
         # LIST with BOMBS of FLAGS (for LABELS)
-        if self.is_bomb_flag:
-            Cell.bomb_count -= 1
-            Cell.bombs_flag.append(self)  # for MODAL WINDOW
-        else:
-            Cell.bomb_count += 1
-            if self in Cell.bombs_flag:  # for MODAL WINDOW
-                Cell.bombs_flag.remove(self)
+        if not self.is_opened:
+            if self.is_bomb_flag:
+                Cell.bomb_count -= 1
+                Cell.bombs_flag.append(self)  # for MODAL WINDOW
+            else:
+                Cell.bomb_count += 1
+                if self in Cell.bombs_flag:  # for MODAL WINDOW
+                    Cell.bombs_flag.remove(self)
 
         # LABEL : BOMBS
         if Cell.bomb_count_label:

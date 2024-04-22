@@ -8,6 +8,8 @@
   </a>
 </div>
 
+## Navigation
+
 | Programming Language | Library |                             Source Code                              |
 | -------------------- | ------- | -------------------------------------------------------------------- |
 | Python               | Tkinter | https://github.com/MoguchiyDD/Minesweeper/tree/Python/Python/tkinter |

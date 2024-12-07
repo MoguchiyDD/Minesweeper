@@ -1,14 +1,7 @@
-# Developer && Owner: МогучийДД (MoguchiyDD)
-# LICENSE: MIT License which is located in the text file LICENSE
+# MIT License
 #
-# Goal: Create BOX with CONTENTS
-# Result: Ready BOX with CONTENTS
-#
-# Past Modification: Editing The «CELL» Block (LABELS)
-# Last Modification: Bug Fixed
-# Modification Date: 2024.04.22, 11:31 AM
-#
-# Create Date: 2024.04.20, 03:03 PM
+# Copyright (c) 2024 MoguchiyDD
+# URL: https://github.com/MoguchiyDD/Minesweeper
 
 
 from tkinter import Misc, Frame, Label, Button, Event, PhotoImage, font

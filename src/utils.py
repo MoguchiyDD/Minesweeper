@@ -1,14 +1,7 @@
-# Developer && Owner: МогучийДД (MoguchiyDD)
-# LICENSE: MIT License which is located in the text file LICENSE
+# MIT License
 #
-# Goal: Create HELPER FUNCTIONS
-# Result: Ready HELPER FUNCTIONS
-#
-# Past Modification: Adding The «FRAME HEIGHT» Block
-# Last Modification: Adding The «MODAL WINDOW» Block
-# Modification Date: 2024.04.21, 06:50 PM
-#
-# Create Date: 2024.04.20, 03:03 PM
+# Copyright (c) 2024 MoguchiyDD
+# URL: https://github.com/MoguchiyDD/Minesweeper
 
 
 from tkinter import Tk, Toplevel, Frame, Label, Button, font

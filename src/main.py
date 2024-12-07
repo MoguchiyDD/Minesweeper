@@ -1,14 +1,7 @@
-# Developer && Owner: МогучийДД (MoguchiyDD)
-# LICENSE: MIT License which is located in the text file LICENSE
+# MIT License
 #
-# Goal: Launch Working SOFTWARE
-# Result: Opens The Finished SOFTWARE in The ACTIVE WINDOW
-#
-# Past Modification: Bug Fixed
-# Last Modification: Centralization of The SOFTWARE WINDOW
-# Modification Date: 2024.04.21, 06:43 PM
-#
-# Create Date: 2024.04.20, 03:03 PM
+# Copyright (c) 2024 MoguchiyDD
+# URL: https://github.com/MoguchiyDD/Minesweeper
 
 
 from tkinter import Tk

@@ -1,14 +1,7 @@
-# Developer && Owner: МогучийДД (MoguchiyDD)
-# LICENSE: MIT License which is located in the text file LICENSE
+# MIT License
 #
-# Goal: SOFTWARE FOOTER
-# Result: Ready SOFTWARE FOOTER
-#
-# Past Modification: Moving The FOOTER from «main.py» to «content/footer.py»
-# Last Modification: Adding COPYRIGHT (Official Page)
-# Modification Date: 2024.04.21, 07:27 PM
-#
-# Create Date: 2024.04.20, 03:03 PM
+# Copyright (c) 2024 MoguchiyDD
+# URL: https://github.com/MoguchiyDD/Minesweeper
 
 
 from tkinter import Tk, Frame, Button, font

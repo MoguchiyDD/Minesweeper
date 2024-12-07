@@ -1,14 +1,7 @@
-# Developer && Owner: МогучийДД (MoguchiyDD)
-# LICENSE: MIT License which is located in the text file LICENSE
+# MIT License
 #
-# Goal: SOFTWARE HEADER
-# Result: Ready SOFTWARE HEADER
-#
-# Past Modification: Adding COPYRIGHT
-# Last Modification: Moving The HEADER from «main.py» to «content/header.py»
-# Modification Date: 2024.04.20, 03:16 PM
-#
-# Create Date: 2024.04.20, 03:03 PM
+# Copyright (c) 2024 MoguchiyDD
+# URL: https://github.com/MoguchiyDD/Minesweeper
 
 
 from tkinter import Tk, Frame

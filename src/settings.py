@@ -1,14 +1,7 @@
-# Developer && Owner: МогучийДД (MoguchiyDD)
-# LICENSE: MIT License which is located in the text file LICENSE
+# MIT License
 #
-# Goal: Keep CONSTANTS for The SOFTWARE
-# Result: Saved CONSTANTS for The SOFTWARE
-#
-# Past Modification: Adding The «MODAL WINDOW» Block
-# Last Modification: Editing The «NAMES» Block (MODAL WINDOW)
-# Modification Date: 2024.04.21, 06:46 PM
-#
-# Create Date: 2024.04.20, 03:03 PM
+# Copyright (c) 2024 MoguchiyDD
+# URL: https://github.com/MoguchiyDD/Minesweeper
 
 
 # TOTAL

@@ -11,6 +11,7 @@ from settings import (
     MW_BUTTON_WIDTH,
     MW_PADY,
     MW_PADY_CONTENT,
+    MW_GEOMETRY,
     MW_YES_BUTTON_NAME,
     MW_NO_BUTTON_NAME,
     HEADER_HEIGHT_DIV,
@@ -131,8 +132,17 @@ def mw_win_or_lose(
         mw.destroy()
         root.destroy()
 
+    def on_close() -> None:
+        pass
+
     mw = Toplevel(root, background=PRIMARY)
     mw.resizable(False, False)  # fixed: WIDTH, HEIGHT
+    mw.protocol("WM_DELETE_WINDOW", on_close)
+
+    # CENTER
+    __width = root.winfo_x() + MW_GEOMETRY
+    __height = root.winfo_y() + MW_GEOMETRY
+    mw.geometry(f"+{__width}+{__height}")
 
     label = Label(
         mw,
@@ -181,5 +191,6 @@ def mw_win_or_lose(
     mw.grab_set()
     mw.focus_set()
     mw.wait_window()
+
 
 # --------------------------------------

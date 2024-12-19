@@ -10,6 +10,7 @@ from settings import (
     WIDTH,
     GRID_CELLS,
     HEADER_CELL_FONT_SIZE,
+    PAD_CELL,
     PRIMARY,
     SECONDARY,
     HOVER,
@@ -98,6 +99,12 @@ def filling_content_data(
             for y in range(GRID_CELLS):
                 cell = Cell(x, y)
                 cell.create_cell_btn(location_content)
+                if PAD_CELL:
+                    cell.cell_btn.grid(
+                        column=x, row=y,
+                        padx=PAD_CELL, pady=PAD_CELL
+                    )
+                    continue
                 cell.cell_btn.grid(column=x, row=y)
 
         Cell.root = root
